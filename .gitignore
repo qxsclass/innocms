@@ -6,6 +6,7 @@
 /storage/*.key
 /package-lock.json
 /vendor
+.docker-compose.yml
 .env
 .env.backup
 .env.production

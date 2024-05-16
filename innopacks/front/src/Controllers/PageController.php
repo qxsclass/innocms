@@ -26,6 +26,7 @@ class PageController extends Controller
         $slug = $request->slug;
         $page = PageRepo::getInstance()->builder(['active' => true])->where('slug', $slug)->firstOrFail();
         $page->increment('viewed');
+//        dd($page->translation);
         $data = [
             'slug' => $slug,
             'page' => $page,
